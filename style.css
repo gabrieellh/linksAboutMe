@@ -1,0 +1,144 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* Reset CSS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Root */
+
+:root {
+    --button: #98FB98;
+    --backgrounds: #5F9EA0;
+}
+
+/* Styles */
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #121214;
+
+}
+
+h2 {
+    font-family: 'Unbounded', sans-serif;
+    color: #000;
+}
+
+.main-paragraph {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 3rem 0px 1rem 0px;
+    font-size: 20px;
+}
+
+button {
+    background-color: var(--button);
+    padding: 0.5rem;
+    width: 200px;
+    border-radius: 1rem;
+    margin: 2rem 0px 0px 0px; 
+    border-style: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+button > a {
+    color: #000;
+}
+
+button:hover {
+    background-color: #c9c9b4;
+}
+
+.generics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0px 3rem 0px; 
+}
+
+.image-float {
+    height: 150px;
+    width: 150px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.card1,
+.card2,
+.card3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--backgrounds);
+    padding: 3rem;
+    width: 500px;
+    border-radius: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.paragraph-footer {
+    margin: 5rem 0px 5rem 0px;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Animation */
+
+@keyframes float {
+    0%      { transform: translateY(0);}
+    50%     { transform: translateY(-25px);}
+    100%    {transform: translateY(0);}
+}
+
+/* Responsivo */
+
+@media (max-width: 910px) {
+    .card1,
+    .card2,
+    .card3 {
+        width: 300px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    
+    .main-paragraph {
+        text-align: center;
+    }
+
+    .paragraph-footer {
+        text-align: center;
+    }
+}
